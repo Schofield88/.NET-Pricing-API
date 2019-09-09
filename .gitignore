@@ -271,5 +271,6 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+testData.json
 
 # End of https://www.gitignore.io/api/aspnetcore
