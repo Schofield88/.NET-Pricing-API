@@ -5,14 +5,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PricingApi.Models;
 
-namespace PricingApi.Controllers {
-    [Route ("api/[controller]")]
+namespace PricingApi.Controllers
+{
+    [Route("api/[controller]")]
     [ApiController]
 
-    public class OrderController : ControllerBase {
+    public class OrderController : ControllerBase
+    {
         [HttpPost]
-        public ActionResult<CustomerOrder> Invoice (CustomerOrder invoice) {
-            return invoice;
+        public ActionResult<OrderSummary> Invoice(CustomerOrder invoice)
+        {
+            var customerThing = new OrderSummary();
+            return customerThing;
         }
     }
 
